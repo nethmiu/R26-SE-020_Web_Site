@@ -8,6 +8,8 @@
     <meta name="description" content="WorkWave - On-Demand Home & Personal Services Platform">
     <!-- Google Fonts for Modern Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,18 +37,16 @@
                     <h1 class="fade-in">WorkWave</h1>
                     <h2 class="fade-in delay-1">Project Abstract</h2>
                     <p class="fade-in delay-2">
-                        An innovative, AI-powered MicroLocal platform designed to support micro-entrepreneurs. We
-                        seamlessly connect local service providers with customers, utilizing intelligent matching
-                        mechanisms to drastically improve visibility and operational efficiency within your community.
+                        An innovative, AI-powered MicroLocal platform designed to support micro-entrepreneurs. We seamlessly connect local service providers with customers by combining intelligent matching mechanisms, automated AI issue diagnostics, computer vision-based fraud detection, and predictive demand forecasting with a robust trust governance engine. Together, these technologies drastically improve visibility, security, and operational efficiency within your community.
                     </p>
 
                     <!-- Navigational Aids / Table of Contents -->
                     <div class="toc-box fade-in delay-3">
-                        <h3>Quick Navigation</h3>
+                        <h3><i class="fa-solid fa-compass" style="margin-right: 10px; color: var(--primary-color);"></i>Quick Navigation</h3>
                         <ul class="toc-list">
-                            <li><a href="#domain">Domain Details</a></li>
-                            <li><a href="#milestones">Project Milestones</a></li>
-                            <li><a href="#documents">Official Documents</a></li>
+                            <li><a href="#domain"><i class="fa-solid fa-diagram-project toc-link-icon"></i>Domain Details</a></li>
+                            <li><a href="#milestones"><i class="fa-solid fa-flag-checkered toc-link-icon"></i>Project Milestones</a></li>
+                            <li><a href="#documents"><i class="fa-solid fa-folder-open toc-link-icon"></i>Official Documents</a></li>
                         </ul>
                     </div>
 
@@ -68,23 +68,34 @@
         <section id="domain" class="section-bg-alt">
             <div class="container">
                 <h2 class="section-title">Project <span>Domain</span></h2>
-                <p
-                    style="text-align: center; color: var(--text-muted); max-width: 700px; margin: -40px auto 50px; font-size: 1.1rem;">
+                
+
+                <div class="domain-image-wrapper fade-in delay-1">
+                    <div class="domain-image-container">
+                        <div class="domain-image-glow"></div>
+                        <img src="img/domain-ai.png" alt="Project Domain - AI Architecture" class="domain-image">
+                    </div>
+                    
+                </div>
+
+                <p class="fade-in delay-2"
+                    style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 10px auto 40px; font-size: 1.1rem;">
                     This section has domain details about our project. Here we describe the information we have gathered
                     by the literature survey, our objectives, and the methodology.
                 </p>
-                <div class="tabs-container">
+
+                <div class="tabs-container" style="margin-top: 0;">
                     <div class="tabs-sidebar">
                         <button class="tab-btn active" onclick="openDomainTab('tab-lit-survey')"><span
-                                class="tab-icon">📚</span> Literature Survey</button>
+                                class="tab-icon"><i class="fa-solid fa-book-open"></i></span> Literature Survey</button>
                         <button class="tab-btn" onclick="openDomainTab('tab-research-gap')"><span
-                                class="tab-icon">🔍</span> Research Gap</button>
-                        <button class="tab-btn" onclick="openDomainTab('tab-problem')"><span class="tab-icon">🎯</span>
+                                class="tab-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></span> Research Gap</button>
+                        <button class="tab-btn" onclick="openDomainTab('tab-problem')"><span class="tab-icon"><i class="fa-solid fa-bullseye"></i></span>
                             Research Problem</button>
                         <button class="tab-btn" onclick="openDomainTab('tab-objectives')"><span
-                                class="tab-icon">🚀</span> Research Objectives</button>
+                                class="tab-icon"><i class="fa-solid fa-rocket"></i></span> Research Objectives</button>
                         <button class="tab-btn" onclick="openDomainTab('tab-methodology')"><span
-                                class="tab-icon">⚙️</span> Methodology</button>
+                                class="tab-icon"><i class="fa-solid fa-gears"></i></span> Methodology</button>
                     </div>
 
                     <div class="tabs-content">
@@ -294,54 +305,52 @@
                     </div>
                     <div class="tech-card">
                         <div class="tech-icon"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                                alt="HTML5" style="height: 48px; margin-right: 5px;"><img
-                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                                alt="CSS3" style="height: 48px;"></div>
-                        <div class="tech-name">HTML5/CSS3</div>
-                        <div class="tech-cat">Frontend</div>
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                                alt="React Native" style="height: 48px;"></div>
+                        <div class="tech-name">React Native (Expo)</div>
+                        <div class="tech-cat">Mobile Apps</div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3.5 Study Procedure Section -->
-        <section id="procedure">
-            <div class="container">
-                <h2 class="section-title">Experimental & <span>Study Procedure</span></h2>
-                <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: -40px auto 50px; font-size: 1.1rem;">
-                    Interactive visualization of our research and development lifecycle. Click on any phase to view details.
-                </p>
-                
-                <div class="procedure-container">
-                    <div class="circle-wrapper">
-                        <!-- Central display for content -->
-                        <div class="center-content fade-in" id="proc-center">
-                            <h3>Select a Phase</h3>
-                            <p>Click on any phase surrounding this circle to view detailed information about our procedure.</p>
-                        </div>
-
-                        <!-- Nodes -->
-                        <div class="proc-node" data-index="0" style="--i: 0;" onclick="showProcedure(0)">
-                            <div class="proc-icon"><img src="https://img.icons8.com/color/96/survey.png" alt="Requirement Gathering"></div>
-                            <span>Requirement Gathering</span>
-                        </div>
-                        <div class="proc-node" data-index="1" style="--i: 1;" onclick="showProcedure(1)">
-                            <div class="proc-icon"><img src="https://img.icons8.com/color/96/flow-chart.png" alt="System Design"></div>
-                            <span>System Design</span>
-                        </div>
-                        <div class="proc-node" data-index="2" style="--i: 2;" onclick="showProcedure(2)">
-                            <div class="proc-icon"><img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="AI Integration"></div>
-                            <span>AI Integration</span>
-                        </div>
-                        <div class="proc-node" data-index="3" style="--i: 3;" onclick="showProcedure(3)">
-                            <div class="proc-icon"><img src="https://img.icons8.com/color/96/programming.png" alt="Implementation"></div>
-                            <span>Implementation</span>
-                        </div>
-                        <div class="proc-node" data-index="4" style="--i: 4;" onclick="showProcedure(4)">
-                            <div class="proc-icon"><img src="https://img.icons8.com/color/96/approval.png" alt="Testing"></div>
-                            <span>Testing & Evaluation</span>
-                        </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                                alt="React.js" style="height: 48px;"></div>
+                        <div class="tech-name">React.js</div>
+                        <div class="tech-cat">Admin Dashboard</div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                                alt="Python" style="height: 44px; margin-right: 3px;"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+                                alt="Flask" class="invert-dark" style="height: 44px;"></div>
+                        <div class="tech-name">Python (Flask)</div>
+                        <div class="tech-cat">ML Backend</div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                                alt="Scikit-learn" style="height: 48px;"></div>
+                        <div class="tech-name">Scikit-learn</div>
+                        <div class="tech-cat">Random Forest</div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+                                alt="FastAPI" style="height: 44px; margin-right: 3px;"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+                                alt="PyTorch" style="height: 44px;"></div>
+                        <div class="tech-name">FastAPI & PyTorch</div>
+                        <div class="tech-cat">Computer Vision</div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fa-solid fa-cloud-sun" style="font-size: 2.5rem; color: #F59E0B;"></i></div>
+                        <div class="tech-name">Open-Meteo & Calendarific</div>
+                        <div class="tech-cat">External APIs</div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon"><i class="fa-solid fa-envelopes-bulk" style="font-size: 2.5rem; color: #EA4335;"></i></div>
+                        <div class="tech-name">Nodemailer / SMTP</div>
+                        <div class="tech-cat">Email Service</div>
                     </div>
                 </div>
             </div>
@@ -377,14 +386,14 @@
                             <div
                                 style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
                                 <h3 style="margin: 0; font-size: 1.3rem;"><span
-                                        style="margin-right: 8px;">📄</span>Project Proposal</h3>
+                                        style="margin-right: 8px;"><i class="fa-solid fa-file-lines"></i></span>Project Proposal</h3>
                                 <span class="status-badge success">12%</span>
                             </div>
                             <p style="margin: 0; color: var(--text-muted); margin-bottom: 15px;">Initial scoping,
                                 problem definition, and architecture design approval.</p>
                             <a href="https://drive.google.com/drive/folders/1lgGaW6Vu-JRZ15jmahZR2x6BYfX3Rv-B?usp=drive_link"
                                 target="_blank" class="drive-btn">
-                                <span style="font-size: 1rem;">📁</span> View Documents
+                                <span style="font-size: 1rem;"><i class="fa-solid fa-folder-open"></i></span> View Documents
                             </a>
                         </div>
                     </div>
@@ -397,7 +406,7 @@
                             <div
                                 style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
                                 <h3 style="margin: 0; font-size: 1.3rem;"><span
-                                        style="margin-right: 8px;">📊</span>Progress Presentation-1</h3>
+                                        style="margin-right: 8px;"><i class="fa-solid fa-chart-column"></i></span>Progress Presentation-1</h3>
                                 <span class="status-badge success">15%</span>
                             </div>
                             <p style="margin: 0; color: var(--text-muted); margin-bottom: 15px;">Demonstration of core
@@ -405,7 +414,7 @@
                                     Completion: 50%)</strong></p>
                             <a href="https://drive.google.com/file/d/1OXTCEsP_riWClib2lxXkumriyzUTIbKj/view?usp=drive_link"
                                 target="_blank" class="drive-btn">
-                                <span style="font-size: 1rem;">📁</span> View Documents
+                                <span style="font-size: 1rem;"><i class="fa-solid fa-folder-open"></i></span> View Documents
                             </a>
                         </div>
                     </div>
@@ -418,7 +427,7 @@
                             <div
                                 style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
                                 <h3 style="margin: 0; font-size: 1.3rem;"><span
-                                        style="margin-right: 8px;">📈</span>Progress Presentation-2</h3>
+                                        style="margin-right: 8px;"><i class="fa-solid fa-chart-line"></i></span>Progress Presentation-2</h3>
                                 <span class="status-badge success">18%</span>
                             </div>
                             <p style="margin: 0; color: var(--text-muted); margin-bottom: 15px;">Integration of API
@@ -426,7 +435,7 @@
                                     Completion: 90%)</strong></p>
                             <a href="https://drive.google.com/file/d/1IK7O7Q-dQc-JSxxceD5zrectUZBdyb0S/view?usp=drive_link"
                                 target="_blank" class="drive-btn">
-                                <span style="font-size: 1rem;">📁</span> View Documents
+                                <span style="font-size: 1rem;"><i class="fa-solid fa-folder-open"></i></span> View Documents
                             </a>
                         </div>
                     </div>
@@ -434,12 +443,12 @@
                     <!-- Milestone 4 -->
                     <div class="timeline-item" id="ms-final">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">October 20, 2026</div>
+                        <div class="timeline-date">October 21, 2026</div>
                         <div class="timeline-content card hover-lift" style="margin: 0; text-align: left;">
                             <div
                                 style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
                                 <h3 style="margin: 0; font-size: 1.3rem;"><span
-                                        style="margin-right: 8px;">🏁</span>Final Presentation & Viva</h3>
+                                        style="margin-right: 8px;"><i class="fa-solid fa-flag-checkered"></i></span>Final Presentation & Viva</h3>
                                 <span class="status-badge success">20%</span>
                             </div>
                             <p style="margin: 0; color: var(--text-muted);">Full system deployment, documentation
@@ -475,46 +484,46 @@
                     <!-- Doc 1 -->
                     <div class="card hover-lift" id="doc-charter"
                         style="margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 40px; flex: 1 1 300px; max-width: 450px;">
-                        <div style="font-size: 4rem; margin-bottom: 20px;">📄</div>
+                        <div style="font-size: 4rem; margin-bottom: 20px; color: var(--primary-color);"><i class="fa-solid fa-file-contract"></i></div>
                         <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Project Charter </h3>
                         <p style="color: var(--text-muted); margin-bottom: 25px;">The initial project charter defining
                             the scope, objectives, and participants.</p>
                         <a href="https://drive.google.com/file/d/195VOMaFr6PDCBF_bRkzH_cRGe9ToHJ9k/view?usp=drive_link"
                             target="_blank" class="drive-btn">
-                            <span style="font-size: 1rem;">📁</span> View Document
+                            <span style="font-size: 1rem;"><i class="fa-solid fa-folder-open"></i></span> View Document
                         </a>
                     </div>
 
                     <!-- Doc 2 -->
                     <div class="card hover-lift" id="doc-proposal"
                         style="margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 40px; flex: 1 1 300px; max-width: 450px;">
-                        <div style="font-size: 4rem; margin-bottom: 20px;">📄</div>
+                        <div style="font-size: 4rem; margin-bottom: 20px; color: var(--primary-color);"><i class="fa-solid fa-file-lines"></i></div>
                         <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Proposal Document (one doc)</h3>
                         <p style="color: var(--text-muted); margin-bottom: 25px;">Detailed proposal covering the
                             literature survey, research gap, and architecture.</p>
                         <a href="https://drive.google.com/file/d/1c3sQJlBCfnrM2HPZztpfTbbzRtDOSnKj/view?usp=drive_link"
                             target="_blank" class="drive-btn">
-                            <span style="font-size: 1rem;">📁</span> View Document
+                            <span style="font-size: 1rem;"><i class="fa-solid fa-folder-open"></i></span> View Document
                         </a>
                     </div>
 
                     <!-- Doc 3 -->
                     <div class="card hover-lift" id="doc-checklist"
                         style="margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 40px; flex: 1 1 300px; max-width: 450px;">
-                        <div style="font-size: 4rem; margin-bottom: 20px;">📋</div>
+                        <div style="font-size: 4rem; margin-bottom: 20px; color: var(--primary-color);"><i class="fa-solid fa-list-check"></i></div>
                         <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Check List Documents</h3>
                         <p style="color: var(--text-muted); margin-bottom: 25px;">A collection of checklists used for
                             evaluations and project tracking.</p>
                         <a href="https://drive.google.com/file/d/12giA6Fq7ZAM08GNI-V_NlttXA8NzUwwp/view?usp=drive_link"
                             target="_blank" class="drive-btn">
-                            <span style="font-size: 1rem;">📁</span> View Document
+                            <span style="font-size: 1rem;"><i class="fa-solid fa-folder-open"></i></span> View Document
                         </a>
                     </div>
 
                     <!-- Doc 4 -->
                     <div class="card hover-lift" id="doc-final"
                         style="margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 40px; flex: 1 1 300px; max-width: 450px;">
-                        <div style="font-size: 4rem; margin-bottom: 20px;">📑</div>
+                        <div style="font-size: 4rem; margin-bottom: 20px; color: var(--primary-color);"><i class="fa-solid fa-book"></i></div>
                         <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Final Document (4 docs)</h3>
                         <p style="color: var(--text-muted); margin-bottom: 25px;">Comprehensive final report including
                             the main thesis and 4 supplementary documents.</p>
@@ -532,28 +541,36 @@
 
                 <div class="grid-container about-grid">
                     <div class="profile-card hover-lift">
-                        <div class="avatar">👨‍💻</div>
-                        <h3>KMLP Kumarasekara</h3>
+                        <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>K.M.L.P. Kumarasekara</h3>
                         <p class="role">Trainee Software Engineer</p>
                         <p style="margin-top: 10px; font-weight: bold; font-size: 1.1rem; color: var(--primary-color);">
                             IT22112064</p>
                     </div>
                     <div class="profile-card hover-lift">
-                        <div class="avatar">👨‍💻</div>
-                        <h3>KAT Oshera</h3>
+                        <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
+                        <h3>K.A.T. Oshera</h3>
                         <p class="role">Trainee Software Engineer</p>
                         <p style="margin-top: 10px; font-weight: bold; font-size: 1.1rem; color: var(--primary-color);">
                             IT22065612</p>
                     </div>
                     <div class="profile-card hover-lift">
-                        <div class="avatar">👨‍💻</div>
-                        <h3>MNU Silva</h3>
+                        <div class="avatar"><img src="img/nethmi.png" alt="M.N.U. Silva"></div>
+                        <h3>M.N.U. Silva</h3>
                         <p class="role">Trainee Software Engineer</p>
                         <p style="margin-top: 10px; font-weight: bold; font-size: 1.1rem; color: var(--primary-color);">
                             IT22169112</p>
+                        <div class="profile-socials">
+                            <a href="https://github.com/nethmiu" target="_blank" class="social-link" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nethmiumaya/?isSelfProfile=false" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="profile-card hover-lift">
-                        <div class="avatar">👨‍💻</div>
+                        <div class="avatar"><i class="fa-solid fa-user-tie"></i></div>
                         <h3>W.A.C.S. Wijesinghe</h3>
                         <p class="role">Trainee Software Engineer</p>
                         <p style="margin-top: 10px; font-weight: bold; font-size: 1.1rem; color: var(--primary-color);">
@@ -562,7 +579,7 @@
                 </div>
 
                 <div class="achievements-box fade-in">
-                    <div class="achieve-icon">🏆</div>
+                    <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
                     <div class="achieve-content">
                         <h3>Key Project Achievement</h3>
                         <p>Engineered a highly robust microservices platform capable of handling <strong>50 concurrent
@@ -583,15 +600,15 @@
                         <p>If you have any inquiries regarding the WorkWave platform or our research methodology, please
                             reach out to us.</p>
                         <div class="info-item">
-                            <span class="icon">📞</span>
+                            <span class="icon"><i class="fa-solid fa-phone"></i></span>
                             <span>+94 XX XXX XXXX</span>
                         </div>
                         <div class="info-item">
-                            <span class="icon">✉️</span>
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                             <span>contact@workwave-research.local</span>
                         </div>
                         <div class="info-item">
-                            <span class="icon">📍</span>
+                            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
                             <span>Sri Lanka</span>
                         </div>
                     </div>
@@ -614,28 +631,15 @@
         </section>
         <!-- Animation Toggle Button -->
         <button id="anim-toggle-btn" onclick="toggleAnimation()" class="hover-lift"
-            style="position: fixed; bottom: 30px; left: 30px; background: var(--primary-color); color: #000; border: none; padding: 15px; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; z-index: 9999; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(250, 204, 21, 0.3);">
-            ✨
+            style="position: fixed; bottom: 30px; left: 30px; background: var(--primary-color); color: #000; border: none; padding: 15px; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; z-index: 9999; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(250, 204, 21, 0.3);">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
         </button>
 
         <!-- Theme Toggle Button -->
         <button id="theme-toggle-btn" onclick="toggleTheme()" class="hover-lift"
-            style="position: fixed; bottom: 30px; right: 30px; background: var(--card-bg); color: var(--text-color); border: 2px solid var(--border-color); padding: 15px; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; z-index: 9999; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);">
-            🌞
+            style="position: fixed; bottom: 30px; right: 30px; background: var(--card-bg); color: var(--text-color); border: 2px solid var(--border-color); padding: 15px; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; z-index: 9999; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);">
+            <i class="fa-solid fa-sun"></i>
         </button>
-
-        <!-- Center Popup Modal for Procedure Details -->
-        <div class="modal-overlay" id="modal-overlay" onclick="closeProcedureModal()"></div>
-        <div class="modal-popup" id="modal-popup">
-            <button class="close-modal-btn" onclick="closeProcedureModal()">✕</button>
-            <div class="modal-header">
-                <div class="icon" id="sp-icon"><img src="" alt="Icon" style="width: 50px; height: 50px;"></div>
-                <h2 id="sp-title">Requirement Gathering</h2>
-            </div>
-            <div class="modal-content" id="sp-content">
-                <!-- Content will be injected via JS -->
-            </div>
-        </div>
 
         <footer>
             <div class="container">
@@ -722,124 +726,13 @@
                 }
             }
 
-            // Procedure Navigation Logic
-            const procData = [
-                {
-                    title: "Requirement Gathering",
-                    icon: "https://img.icons8.com/color/96/survey.png",
-                    desc: "Collecting data through literature surveys, identifying the research gap, and defining system constraints.",
-                    longDesc: "The initial phase focuses heavily on understanding the current state of local service platforms and identifying critical research gaps. We conducted extensive literature surveys on AI-based service recognition, provider recommendation, and demand forecasting.",
-                    tasks: [
-                        "Conducting Literature Review on AI in MicroLocal platforms",
-                        "Identifying Research Gaps (e.g., Fragmented AI Solutions)",
-                        "Defining System Scope and Research Objectives",
-                        "Gathering Non-Functional Requirements (NFR) for high load"
-                    ]
-                },
-                {
-                    title: "System Design",
-                    icon: "https://img.icons8.com/color/96/flow-chart.png",
-                    desc: "Architecting a highly robust microservices platform, designing UI/UX, and establishing AI model pipelines.",
-                    longDesc: "Based on the requirements, we designed a scalable Microservices Architecture. This phase included database schema design (MongoDB), API Gateway routing, and defining the integration points for AI services.",
-                    tasks: [
-                        "Designing the Microservices Architecture (Auth, Users, Services)",
-                        "Database Schema Design for MongoDB",
-                        "UI/UX Design for Customer and Provider Dashboards",
-                        "Planning AI Model integration points (TensorFlow/Gemini)"
-                    ]
-                },
-                {
-                    title: "AI Integration",
-                    icon: "https://img.icons8.com/color/96/artificial-intelligence.png",
-                    desc: "Implementing TensorFlow and Gemini API for image recognition, OCR, and intelligent matching algorithms.",
-                    longDesc: "This critical phase involved training and integrating AI models to empower the platform. We utilized MobileNetV2 for image classification, Tesseract.js for document OCR, and the Gemini API for Generative AI tasks like automated promotional content.",
-                    tasks: [
-                        "Developing Image Classification for service recognition",
-                        "Implementing Provider Recommendation Engine",
-                        "Integrating Demand Forecasting Models",
-                        "Setting up Gemini API for automated ad generation"
-                    ]
-                },
-                {
-                    title: "Implementation",
-                    icon: "https://img.icons8.com/color/96/programming.png",
-                    desc: "Developing the platform using Node.js, Express, MongoDB, and creating the scalable microservices ecosystem.",
-                    longDesc: "The actual coding phase where the architecture was brought to life. We developed secure RESTful APIs using Node.js and Express, integrated Socket.io for real-time features, and built a responsive front-end using HTML5, CSS3, and JavaScript.",
-                    tasks: [
-                        "Developing Backend Microservices (Node.js, Express)",
-                        "Implementing JWT-based Authentication & Security",
-                        "Developing the Real-time Notification System (Socket.io)",
-                        "Building the responsive Front-end web application"
-                    ]
-                },
-                {
-                    title: "Testing & Evaluation",
-                    icon: "https://img.icons8.com/color/96/approval.png",
-                    desc: "Conducting rigorous load testing, user acceptance testing (UAT), and evaluating system performance.",
-                    longDesc: "To ensure reliability, the system underwent strict testing. We evaluated the AI models for accuracy, tested the microservices for handling 50 concurrent high-load burst threads with a 0% failure rate, and conducted User Acceptance Testing (UAT).",
-                    tasks: [
-                        "AI Model Evaluation (Accuracy, Precision, Recall)",
-                        "Load Testing (Handling 50 concurrent threads < 400ms)",
-                        "Security and Vulnerability Testing",
-                        "User Acceptance Testing (UAT) and gathering feedback"
-                    ]
-                }
-            ];
-
-            function showProcedure(index) {
-                document.querySelectorAll('.proc-node').forEach(node => node.classList.remove('active'));
-                
-                const clickedNode = document.querySelector(`.proc-node[data-index="${index}"]`);
-                if(clickedNode) clickedNode.classList.add('active');
-
-                // Update Center Content
-                const centerContent = document.getElementById('proc-center');
-                centerContent.classList.remove('pulse');
-                void centerContent.offsetWidth; // trigger reflow
-                centerContent.classList.add('pulse');
-
-                centerContent.style.opacity = '0';
-                setTimeout(() => {
-                    centerContent.innerHTML = `
-                        <h3>${procData[index].title}</h3>
-                        <p>${procData[index].desc}</p>
-                    `;
-                    centerContent.style.opacity = '1';
-                }, 200);
-
-                // Update and Open Modal Popup
-                const data = procData[index];
-                document.querySelector('#sp-icon img').src = data.icon;
-                document.getElementById('sp-title').innerText = data.title;
-                
-                let tasksHtml = data.tasks.map(task => `<li>${task}</li>`).join('');
-                
-                document.getElementById('sp-content').innerHTML = `
-                    <p>${data.longDesc}</p>
-                    <h4>Key Activities:</h4>
-                    <ul>
-                        ${tasksHtml}
-                    </ul>
-                `;
-
-                document.getElementById('modal-overlay').classList.add('active');
-                document.getElementById('modal-popup').classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            }
-
-            function closeProcedureModal() {
-                document.getElementById('modal-overlay').classList.remove('active');
-                document.getElementById('modal-popup').classList.remove('active');
-                document.body.style.overflow = ''; // Restore background scrolling
-            }
-
             // Background Animation System
             let currentAnimType = 1; // 0: None, 1: Dust/Stars, 2: Tools, 3: Furniture
             let animInterval;
             const animIcons = {
-                1: ['✨', '⭐', '💫', '✦', '✧'],
-                2: ['🔧', '🚰', '💧', '🌿', '🍃', '🌱', '🖌️', '🎨', '🧹', '🧰', '🚿', '✂️'],
-                3: ['🪑', '🛋️', '🛏️', '🚪', '🪟', '🧺', '📦', '🧽']
+                1: ['<i class="fa-solid fa-star"></i>', '<i class="fa-solid fa-star-of-life"></i>', '<i class="fa-solid fa-sparkles"></i>', '<i class="fa-solid fa-shapes"></i>', '<i class="fa-regular fa-star"></i>'],
+                2: ['<i class="fa-solid fa-wrench"></i>', '<i class="fa-solid fa-faucet"></i>', '<i class="fa-solid fa-droplet"></i>', '<i class="fa-solid fa-leaf"></i>', '<i class="fa-solid fa-paint-roller"></i>', '<i class="fa-solid fa-broom"></i>', '<i class="fa-solid fa-screwdriver-wrench"></i>', '<i class="fa-solid fa-shower"></i>', '<i class="fa-solid fa-scissors"></i>'],
+                3: ['<i class="fa-solid fa-chair"></i>', '<i class="fa-solid fa-couch"></i>', '<i class="fa-solid fa-bed"></i>', '<i class="fa-solid fa-door-open"></i>', '<i class="fa-solid fa-window-maximize"></i>', '<i class="fa-solid fa-basket-shopping"></i>', '<i class="fa-solid fa-box-archive"></i>', '<i class="fa-solid fa-spray-can-sparkles"></i>']
             };
             const toggleBtn = document.getElementById('anim-toggle-btn');
 
@@ -851,18 +744,18 @@
                 clearInterval(animInterval);
 
                 if (currentAnimType === 0) {
-                    toggleBtn.innerText = '🛑';
+                    toggleBtn.innerHTML = '<i class="fa-solid fa-ban"></i>';
                     toggleBtn.title = 'Animations: Off';
                 } else if (currentAnimType === 1) {
-                    toggleBtn.innerText = '✨';
+                    toggleBtn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles"></i>';
                     toggleBtn.title = 'Animations: Sparkles';
                     startSpawning(1);
                 } else if (currentAnimType === 2) {
-                    toggleBtn.innerText = '🛠️';
+                    toggleBtn.innerHTML = '<i class="fa-solid fa-screwdriver-wrench"></i>';
                     toggleBtn.title = 'Animations: Tools & Maintenance';
                     startSpawning(2);
                 } else if (currentAnimType === 3) {
-                    toggleBtn.innerText = '🛋️';
+                    toggleBtn.innerHTML = '<i class="fa-solid fa-couch"></i>';
                     toggleBtn.title = 'Animations: Furniture & Moving';
                     startSpawning(3);
                 }
@@ -874,7 +767,7 @@
                     particle.className = 'particle';
 
                     const icons = animIcons[type];
-                    particle.innerText = icons[Math.floor(Math.random() * icons.length)];
+                    particle.innerHTML = icons[Math.floor(Math.random() * icons.length)];
 
                     // Random position and size
                     particle.style.left = Math.random() * 100 + 'vw';
@@ -902,10 +795,10 @@
             function toggleTheme() {
                 document.body.classList.toggle('light-theme');
                 if (document.body.classList.contains('light-theme')) {
-                    themeBtn.innerText = '🌙';
+                    themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
                     localStorage.setItem('theme', 'light');
                 } else {
-                    themeBtn.innerText = '🌞';
+                    themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
                     localStorage.setItem('theme', 'dark');
                 }
             }
@@ -913,7 +806,7 @@
             // Load theme preference on load
             if (localStorage.getItem('theme') === 'light') {
                 document.body.classList.add('light-theme');
-                themeBtn.innerText = '🌙';
+                themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
             }
 
             // Smooth scrolling logic for all anchor links
